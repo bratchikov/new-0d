@@ -1,0 +1,130 @@
+---
+layout: default
+title: "Бронирование"
+description: "Выберите дату, время и глубину вашего погружения. Мы подготовим всё, чтобы ваше путешествие в невозможное стало реальностью."
+permalink: /reservation/
+---
+
+<!-- ==================== PAGE HERO ==================== -->
+<section class="page-hero">
+  <h1 class="page-hero-title">Бронирование</h1>
+  <p class="page-hero-desc">Выберите дату, время и глубину вашего погружения. Мы подготовим всё, чтобы ваше путешествие в невозможное стало реальностью.</p>
+</section>
+
+<!-- ==================== RESERVATION FORM ==================== -->
+<section class="section section-dark fade-in">
+  <div class="container">
+    <div class="reservation-form">
+
+      <form action="#" method="post">
+
+        <!-- Row 1: Name & Phone -->
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="name">Имя</label>
+            <input class="form-input" type="text" id="name" name="name" placeholder="Ваше имя" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="phone">Телефон</label>
+            <input class="form-input" type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required>
+          </div>
+        </div>
+
+        <!-- Row 2: Date & Time -->
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="date">Дата</label>
+            <input class="form-input" type="date" id="date" name="date" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="time">Время</label>
+            <select class="form-select" id="time" name="time" required>
+              <option value="" disabled selected>Выберите время</option>
+              <option value="18:00">18:00</option>
+              <option value="18:30">18:30</option>
+              <option value="19:00">19:00</option>
+              <option value="19:30">19:30</option>
+              <option value="20:00">20:00</option>
+              <option value="20:30">20:30</option>
+              <option value="21:00">21:00</option>
+              <option value="21:30">21:30</option>
+              <option value="22:00">22:00</option>
+              <option value="22:30">22:30</option>
+              <option value="23:00">23:00</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Guests -->
+        <div class="form-group">
+          <label class="form-label" for="guests">Количество гостей</label>
+          <select class="form-select" id="guests" name="guests" required>
+            <option value="" disabled selected>Выберите количество</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="private">Приватная комната (до 12)</option>
+          </select>
+        </div>
+
+        <!-- Depth -->
+        <div class="form-group">
+          <label class="form-label" for="depth">Глубина погружения</label>
+          <select class="form-select" id="depth" name="depth" required>
+            <option value="" disabled selected>Выберите глубину</option>
+            <option value="surface">Поверхность — знакомство с глубиной</option>
+            <option value="midwater">Средние воды — для опытных ныряльщиков</option>
+            <option value="abyssal">Бездонная зона — полная дегустация</option>
+            <option value="mariana">Марианская впадина — эксклюзивный сет шефа</option>
+          </select>
+        </div>
+
+        <!-- Special wishes -->
+        <div class="form-group">
+          <label class="form-label" for="wishes">Особые пожелания</label>
+          <textarea class="form-textarea" id="wishes" name="wishes" rows="4" placeholder="Аллергии, предпочтения, поводы для празднования, желаемые эмоциональные состояния..."></textarea>
+        </div>
+
+        <!-- Submit -->
+        <button type="submit" class="btn btn-primary" style="width: 100%;">Погрузиться</button>
+
+      </form>
+
+      <p class="reservation-note">Бронирование подтверждается в течение 3 часов через квантовый канал связи. В случае невозможности вашего погружения, мы предложим альтернативную реальность.</p>
+
+    </div>
+  </div>
+</section>
+
+<!-- ==================== INFO SECTION ==================== -->
+<section class="section section-gradient fade-in">
+  <div class="container">
+    <div class="about-split">
+
+      <div class="about-text">
+        <h3>Правила погружения</h3>
+        <ul>
+          <li><strong>Дресс-код:</strong> «Глубинный casual» — рекомендуется тёмная одежда, которая хорошо отражает биолюминесцентный свет</li>
+          <li>Мы не обслуживаем гостей младше 18 измерений</li>
+          <li>Пожалуйста, сообщите о любых аллергиях на невозможные ингредиенты</li>
+          <li>Фотографирование разрешено, но вспышка может нарушить биолюминесцентную атмосферу</li>
+        </ul>
+      </div>
+
+      <div class="about-text">
+        <h3>Способы оплаты</h3>
+        <ul>
+          <li>Мы принимаем все виды реальности: банковские карты, криптовалюту, квантовые токены</li>
+          <li>Депозит за бронирование: 50% от предполагаемой глубины погружения</li>
+          <li>Возврат депозита возможен за 48 часов до погружения</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>

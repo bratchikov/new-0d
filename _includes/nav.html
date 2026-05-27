@@ -1,0 +1,23 @@
+<header class="site-header" id="site-header">
+  <nav class="nav-container" aria-label="Основная навигация">
+    <a href="/" class="nav-logo" aria-label="~New~0D~ — на главную">
+      <span class="logo-tilde">~</span><span class="logo-new">New</span><span class="logo-tilde">~</span><span class="logo-zero">0</span><span class="logo-d">D</span><span class="logo-tilde">~</span>
+    </a>
+
+    <button class="nav-toggle" id="nav-toggle" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav-menu">
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+    </button>
+
+    <ul class="nav-menu" id="nav-menu" role="menubar">
+      <li role="none"><a href="/" role="menuitem" class="nav-link{% if page.url == '/' %} active{% endif %}">Глубина</a></li>
+      <li role="none"><a href="/menu/" role="menuitem" class="nav-link{% if page.url contains '/menu' %} active{% endif %}">Меню</a></li>
+      <li role="none"><a href="/interior/" role="menuitem" class="nav-link{% if page.url contains '/interior' %} active{% endif %}">Интерьер</a></li>
+      <li role="none"><a href="/about/" role="menuitem" class="nav-link{% if page.url contains '/about' %} active{% endif %}">Концепция</a></li>
+      <li role="none"><a href="/events/" role="menuitem" class="nav-link{% if page.url contains '/events' %} active{% endif %}">События</a></li>
+      <li role="none"><a href="/contacts/" role="menuitem" class="nav-link{% if page.url contains '/contacts' %} active{% endif %}">Контакты</a></li>
+      <li role="none"><a href="/reservation/" role="menuitem" class="nav-link nav-link-cta">Бронь</a></li>
+    </ul>
+  </nav>
+</header>

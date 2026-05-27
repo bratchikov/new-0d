@@ -1,0 +1,68 @@
+# Site configuration for ~New~0D~ restaurant
+# Domain: nevod.ru
+# Deployed via GitHub Pages
+
+title: "~New~0D~"
+description: "Футуристический ресторан морской кухни за гранью реальности. Гастрономическое путешествие в глубины невозможного."
+tagline: "Там, где глубина встречает будущее"
+url: "https://nevod.ru"
+baseurl: ""
+lang: "ru"
+locale: "ru_RU"
+
+# Google Analytics — замените G-XXXXXXXXXX на свой идентификатор
+google_analytics: "G-LP2ZLJRP3X"
+
+# Yandex Metrika
+yandex_metrika: "109439908"
+
+# SEO
+seo:
+  type: "Restaurant"
+  name: "~New~0D~"
+  url: "https://nevod.ru"
+  logo: "https://nevod.ru/images/logo.png"
+  image: "https://nevod.ru/images/hero/hero-main.png"
+  telephone: "+7-000-000-0000"
+  address:
+    streetAddress: "ул. Бездонная, ∅"
+    addressLocality: "Глубиноград"
+    addressRegion: "Марианская область"
+    postalCode: "000000"
+    addressCountry: "RU"
+  priceRange: "∞∞∞"
+  servesCuisine: "Морская авангардная кухня"
+  openingHours: "Mo-Su 18:00-02:00"
+  geo:
+    latitude: "0.000000"
+    longitude: "0.000000"
+
+# Social (все ведут на страницу продажи домена)
+social:
+  instagram: "https://www.nic.ru/shop/lot/nevod.ru/"
+  telegram: "https://www.nic.ru/shop/lot/nevod.ru/"
+  vk: "https://www.nic.ru/shop/lot/nevod.ru/"
+
+# Jekyll settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+exclude:
+  - README.md
+  - image-prompts.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"

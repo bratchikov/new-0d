@@ -1,0 +1,10 @@
+---
+layout: null
+permalink: /robots.txt
+---
+# Domain nevod.ru is available for acquisition. Details: https://www.nic.ru/shop/lot/nevod.ru/
+
+User-agent: *
+Allow: /
+
+Sitemap: {{ site.url }}/sitemap.xml
