@@ -6,7 +6,7 @@ permalink: /about/
 ---
 
 <!-- ==================== PAGE HERO ==================== -->
-<section class="page-hero" style="background-image: url('/images/hero/hero-about.jpg'); background-size: cover; background-position: center;">
+<section class="page-hero" style="background-image: url('{{ '/images/hero/hero-about.jpg' | relative_url }}'); background-size: cover; background-position: center;">
   <h1 class="page-hero-title">Концепция</h1>
   <p class="page-hero-desc">~New~0D~ — это не ресторан. Это портал. Это точка пересечения невозможного и неизведанного, где гастрономия становится путешествием.</p>
 </section>
@@ -17,7 +17,7 @@ permalink: /about/
     <div class="about-split">
 
       <div class="about-image" style="background: linear-gradient(135deg, #070d1f, #0f2140, #143566, #00bcd4); min-height: 480px; display: flex; align-items: center; justify-content: center;">
-        <img src="/images/about/about-story.jpg" alt="Рождение из глубины — история концепции ~New~0D~" loading="lazy">
+        <img src="{{ '/images/about/about-story.jpg' | relative_url }}" alt="Рождение из глубины — история концепции ~New~0D~" loading="lazy">
       </div>
 
       <div class="about-text">
@@ -96,7 +96,7 @@ permalink: /about/
 
       <!-- Авелин Скайвотер -->
       <div class="team-card fade-in fade-in-delay-1">
-        <div class="team-photo"><img src="/images/team/team-1.jpg" alt="Авелин Скайвотер" loading="lazy"></div>
+        <div class="team-photo"><img src="{{ '/images/team/team-1.jpg' | relative_url }}" alt="Авелин Скайвотер" loading="lazy"></div>
         <h4 class="team-name">Авелин Скайвотер</h4>
         <p class="team-role">Шеф-повар</p>
         <p class="team-bio">Visionary behind the Abyssal Kitchen. 47 years cooking in dimensions no one believed existed.</p>
@@ -104,7 +104,7 @@ permalink: /about/
 
       <!-- Дариус Нулеволн -->
       <div class="team-card fade-in fade-in-delay-2">
-        <div class="team-photo"><img src="/images/team/team-2.jpg" alt="Дариус Нулеволн" loading="lazy"></div>
+        <div class="team-photo"><img src="{{ '/images/team/team-2.jpg' | relative_url }}" alt="Дариус Нулеволн" loading="lazy"></div>
         <h4 class="team-name">Дариус Нулеволн</h4>
         <p class="team-role">Сомелье нейро-спейкинга</p>
         <p class="team-bio">Reads flavor profiles through neural resonance. Can pair wine with your deepest memories.</p>
@@ -112,7 +112,7 @@ permalink: /about/
 
       <!-- Люмина Тайдшейкер -->
       <div class="team-card fade-in fade-in-delay-3">
-        <div class="team-photo"><img src="/images/team/team-3.jpg" alt="Люмина Тайдшейкер" loading="lazy"></div>
+        <div class="team-photo"><img src="{{ '/images/team/team-3.jpg' | relative_url }}" alt="Люмина Тайдшейкер" loading="lazy"></div>
         <h4 class="team-name">Люмина Тайдшейкер</h4>
         <p class="team-role">Креативный директор</p>
         <p class="team-bio">Architect of the impossible space. Designed interiors that defy geometry and gravity.</p>
@@ -120,7 +120,7 @@ permalink: /about/
 
       <!-- Квант ZERO -->
       <div class="team-card fade-in fade-in-delay-4">
-        <div class="team-photo"><img src="/images/team/team-4.jpg" alt="Квант ZERO" loading="lazy"></div>
+        <div class="team-photo"><img src="{{ '/images/team/team-4.jpg' | relative_url }}" alt="Квант ZERO" loading="lazy"></div>
         <h4 class="team-name">Квант ZERO</h4>
         <p class="team-role">Шеф-кондитер</p>
         <p class="team-bio">Creates desserts that exist in superposition — simultaneously all flavors and none.</p>
@@ -144,5 +144,5 @@ permalink: /about/
 <section class="cta-banner fade-in">
   <h2 class="cta-title">Готовы стать частью невозможного?</h2>
   <p class="cta-desc">Бронирование открыто для тех, кто готов пересечь границу обыденного. Количество мест ограничено — глубина не ждёт.</p>
-  <a href="/reservation/" class="btn btn-primary">Забронировать стол</a>
+  <a href="{{ '/reservation/' | relative_url }}" class="btn btn-primary">Забронировать стол</a>
 </section>

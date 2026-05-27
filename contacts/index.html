@@ -145,7 +145,7 @@ permalink: /contacts/
 
       <!-- Image left — gradient placeholder -->
       <div class="about-image" style="background: linear-gradient(135deg, #070d1f, #0f2140, #143566, #00bcd4, #64ffda); min-height: 480px; display: flex; align-items: center; justify-content: center;">
-        <img src="/images/contacts/contacts-building.jpg" alt="Здание ресторана ~New~0D~ — биолюминесцентная арка входа на глубине" loading="lazy">
+        <img src="{{ '/images/contacts/contacts-building.jpg' | relative_url }}" alt="Здание ресторана ~New~0D~ — биолюминесцентная арка входа на глубине" loading="lazy">
       </div>
 
       <!-- Text right -->
@@ -165,5 +165,5 @@ permalink: /contacts/
 <section class="cta-banner fade-in">
   <h2 class="cta-title">Остались вопросы? Погрузитесь к нам</h2>
   <p class="cta-desc">Бронирование открыто для тех, кто готов пересечь границу обыденного. Количество мест ограничено — глубина не ждёт.</p>
-  <a href="/reservation/" class="btn btn-primary">Забронировать стол</a>
+  <a href="{{ '/reservation/' | relative_url }}" class="btn btn-primary">Забронировать стол</a>
 </section>

@@ -62,10 +62,10 @@
   <meta property="twitter:image" content="{{ page.og_image | default: '/images/hero/hero-main.jpg' | absolute_url }}">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png">
-  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ '/images/favicons/favicon-32.png' | relative_url }}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ '/images/favicons/favicon-16.png' | relative_url }}">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ '/images/favicons/apple-touch-icon.png' | relative_url }}">
+  <link rel="manifest" href="{{ '/site.webmanifest' | relative_url }}">
 
   <!-- Canonical -->
   <link rel="canonical" href="{{ page.url | absolute_url }}">
@@ -78,7 +78,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Exo+2:ital,wght@0,200;0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
 
   <!-- Styles -->
-  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 
   <!-- Structured Data: Restaurant -->
   <script type="application/ld+json">
@@ -86,8 +86,8 @@
     "@context": "https://schema.org",
     "@type": "Restaurant",
     "name": "{{ site.title }}",
-    "url": "{{ site.url }}",
-    "image": "{{ site.url }}/images/hero/hero-main.jpg",
+    "url": "{{ '/' | absolute_url }}",
+    "image": "{{ '/images/hero/hero-main.jpg' | absolute_url }}",
     "servesCuisine": "Морская авангардная кухня",
     "priceRange": "∞∞∞",
     "telephone": "+7-000-000-0000",
@@ -110,7 +110,7 @@
       "opens": "18:00",
       "closes": "02:00"
     },
-    "menu": "{{ site.url }}/menu/",
+    "menu": "{{ '/menu/' | absolute_url }}",
     "acceptsReservations": "True",
     "aggregateRating": {
       "@type": "AggregateRating",
@@ -144,6 +144,6 @@
   {% include footer.html %}
 
   <!-- Scripts -->
-  <script src="/assets/js/main.js" defer></script>
+  <script src="{{ '/assets/js/main.js' | relative_url }}" defer></script>
 </body>
 </html>
